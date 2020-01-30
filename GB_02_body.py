@@ -355,7 +355,7 @@ dispatcher.add_handler(get_master_stock_conv_handler)
 del_master_stock_conv_handler = ConversationHandler(
     entry_points=[del_master_stock_handler],
     states={
-        CHOOSE_MSTOCK_SHOW: [choose_del_master_stock_handler]
+        CHOOSE_MSTOCK_DELETE: [choose_del_master_stock_handler]
     },
     fallbacks=[finish_handler]
 )
